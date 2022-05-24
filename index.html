@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="galeria">
+        
+
+      <div id="video">
+        <video  controls id="video1">
+          <source src="O Rochedo e a Estrela.mp4" type="video/mp4" />
+        </video>
+   
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+
+      <div id="video">
+        <video  controls id="video1">
+          <source src="video2.mp4" type="video/mp4" />
+        </video>
+
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+      <div id="video">
+        <video  controls id="video1">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+      <div id="video">
+        <video  controls id="video2">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+      <div id="video">
+        <video  controls id="video1">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+
+    
+    </div>
+      <div id="video">
+        <video  controls id="video1">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+
+        <button onclick="openFullscreen();">Abrir em Tela Cheia</button>
+
+    </div>
+
+    <script>
+      /* Get the element you want displayed in fullscreen */
+      var elem = document.getElementById("video1");
+      var video1 = document.querySelector("video1");
+
+      /* Function to open fullscreen mode */
+      function openFullscreen() {
+        if (elem.requestFullscreen) elem.requestFullscreen();
+        video1.autostart="true";
+      }
+    </script>
+  </body>
+</html>
